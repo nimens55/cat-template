@@ -1,0 +1,31 @@
+.logo {
+  position: relative;
+
+  display: block;
+  width: 34px;
+  height: 38px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 50vw;
+    bottom: 6px;
+    width: 101px;
+    height: 18px;
+    margin-left: -70px;
+
+    background-image: url(../img/logo-mobile-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
