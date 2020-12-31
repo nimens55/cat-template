@@ -18,6 +18,7 @@
   display: none;
   width: 311px;
   height: 232px;
+  margin:0 auto;
   margin-bottom: 27px;
 }
 
@@ -44,7 +45,9 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: @special-dark;
+  color: @dark;
+
+  cursor: pointer;
 }
 
 .toggle__label--before {
@@ -59,10 +62,10 @@
   width: 84px;
   height: 14px;
   padding: 3px 6px;
-  border: 1px solid @special-grey;
+  border: 1px solid @grey-2;
   border-radius: 6px;
 
-  background-color: @basic-white;
+  background-color: @white;
 }
 
 .toggle__button {
@@ -72,7 +75,7 @@
   border:none;
   border-radius: 6px;
 
-  background-color: @basic-green;
+  background-color: @green;
 }
 
 .toggle__input--before:checked ~ .toggle__controls .toggle__button {

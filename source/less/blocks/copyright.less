@@ -7,5 +7,22 @@
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
-  color: @special-dark-grey;
+  color: @dark-grey;
+
+  .copyright:active & {
+    opacity: 0.3;
+  }
+}
+
+.copyright svg {
+  fill: @grey-4;
+}
+
+.copyright:hover svg,
+.copyright:focus svg {
+  fill: @green;
+}
+
+.copyright:active svg {
+  opacity: 0.3;
 }

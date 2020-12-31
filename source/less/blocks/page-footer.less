@@ -5,13 +5,22 @@
   padding-top: 39px;
   padding-bottom: 22px;
 
-  background-color: @basic-grey;
+  background-color: @grey;
 }
 
 .page-footer__logo {
   width: 128px;
   height: 24px;
   margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__socials {

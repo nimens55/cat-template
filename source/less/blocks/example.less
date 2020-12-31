@@ -2,7 +2,7 @@
   padding-top: 27px;
   padding-bottom: 25px;
 
-  background-color: #EAEAEA;
+  background-color: @grey-5;
 }
 
 .example__main-title {
@@ -13,7 +13,7 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 40px;
-  color: @special-dark;
+  color: @dark;
 }
 
 .example__description {
@@ -25,29 +25,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 280px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 42px;
 
   list-style: none;
 }
 
 .example__item--accent {
-  margin-bottom: 34px;
+  margin-bottom: 27px;
 }
 
 .example__item-value {
   display: block;
   width: 124px;
   padding: 15px;
-  border: 1px solid @special-grey;
+  border: 1px solid @grey-2;
   border-radius: 3px;
 
   font-family: "Oswald", Aria, sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: @special-dark;
+  text-transform: uppercase;
+  color: @dark;
 }
 
 .example__item-description {
@@ -61,9 +63,8 @@
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
-  color: @special-dark-grey;
 
-  background-color: #EAEAEA;
+  background-color: @grey-5;
 }
 
 .example__item--not-accent {
@@ -74,5 +75,5 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: @special-dark;
+  color: @dark;
 }
