@@ -11,6 +11,8 @@
 
   background-color: @green;
 
+  cursor: pointer;
+
   &:hover,
   &:focus {
     background-color: @green-2;
@@ -20,5 +22,18 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: @green-2;
+  }
+
+  &--add,
+  &--add:hover,
+  &--add:focus  {
+    color: @dark-grey;
+
+    background-color: @grey;
+  }
+
+  &--add:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: @grey;
   }
 }
