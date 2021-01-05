@@ -1,0 +1,87 @@
+.toggle__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.toggle_img {
+  display: none;
+  width: 311px;
+  height: 232px;
+  margin:0 auto;
+  margin-bottom: 27px;
+}
+
+.toggle__input--before:checked ~ .toggle_img--before {
+  display: block;
+}
+
+.toggle__input--after:checked ~ .toggle_img--after {
+  display: block;
+}
+
+.toggle__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  margin: 0 auto;
+}
+
+.toggle__label {
+  padding: 10px 12px;
+
+  font-family: "Oswald", Aria, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @dark;
+
+  cursor: pointer;
+}
+
+.toggle__label--before {
+  margin-right: 2px;
+}
+
+.toggle__label--after {
+  margin-left: 2px;
+}
+
+.toggle__range {
+  width: 84px;
+  height: 14px;
+  padding: 3px 6px;
+  border: 1px solid @grey-2;
+  border-radius: 6px;
+
+  background-color: @white;
+}
+
+.toggle__button {
+  display: block;
+  width: 35px;
+  height: 6px;
+  border:none;
+  border-radius: 6px;
+
+  background-color: @green;
+}
+
+.toggle__input--before:checked ~ .toggle__controls .toggle__button {
+  margin-right: auto;
+}
+
+.toggle__input--after:checked ~ .toggle__controls .toggle__button {
+  margin-left: auto;
+}
